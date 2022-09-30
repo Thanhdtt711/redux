@@ -1,0 +1,33 @@
+Redux sẽ có 1 store chung để quản lý các State Global
+
+Redux có 3 thành phần 
+
+1. Reducer => Xem lại bài học hook useReducer
+- Nó là 1 function
+- Thực hiện cập nhật State trong Store
+
+2. Actions
+- Nó là 1 object
+- Thể hiện dữ liệu và hành động tương ứng trong Reducer
+
+const addAction = {
+    type: 'products/add',
+    payload: {id: 1, name: "Tên sản phẩm", price: 12000}
+}
+=> Khái niệm actionCreator => Nó là 1 hàm để tạo Action
+
+3. Dispatch
+- Nó là 1 function
+- Gửi action đến Reducer
+
+Lưu ý khi làm việc với Redux 
+
+- Tham chiếu trong Javascript 
+- Clone Object, Array => Sử dụng Spread Operator
+=> Viết hàm Reducer
+
+2 Hook cần sử dụng trong Redux 
+- useDispatch() => Gửi action tới Reducer
+- useSelector() => Lấy state từ store Redux
+
+=> Đều import từ thư viện react-redux
